@@ -24,7 +24,7 @@ function Register() {
     let {name,email,message}=formData;
     console.log(name,email,message);
     
-    axios.post('http://localhost:9876/user',{name,email,message}).then(()=>{
+    axios.post('https://weeklytest-4-nodemailer.onrender.com/user',{name,email,message}).then(()=>{
       console.log('Form Data Submitted:', formData);
     }).catch((err)=>{
       console.log(err);
